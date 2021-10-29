@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+    nextjs:
+        build:
+            context: .
+            dockerfile: docker/Dockerfile
+        restart: unless-stopped
+        networks:
+            - samm-network
+        ports:
+            - "127.0.0.1:3000:3000"
+
+networks:
+    samm-network:
+        driver: bridge

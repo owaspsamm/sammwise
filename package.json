@@ -1,0 +1,33 @@
+{
+  "name": "samm-calc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@progress/kendo-drawing": "^1.10.1",
+    "@progress/kendo-licensing": "^1.1.4",
+    "@progress/kendo-react-pdf": "^4.7.0",
+    "chart.js": "^3.3.2",
+    "chartjs-gauge": "^0.3.0",
+    "next": "10.2.0",
+    "react": "^16.14.0",
+    "react-advanced-gauge-chart": "^0.2.7",
+    "react-chartjs-2": "^3.0.3",
+    "react-dom": "^16.14.0",
+    "react-dropzone": "^11.3.2",
+    "react-file-drop": "^3.1.2",
+    "react-gauge-chart": "^0.3.0",
+    "react-to-print": "^2.12.6",
+    "rebass": "^4.0.7",
+    "reflexbox": "^4.0.6",
+    "survey-react": "^1.8.48"
+  },
+  "devDependencies": {
+    "@types/react-gauge-chart": "^0.3.0",
+    "style-loader": "^2.0.0"
+  }
+}
