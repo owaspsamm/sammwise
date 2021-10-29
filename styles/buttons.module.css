@@ -1,0 +1,77 @@
+
+.dropDown {
+	display:flex;
+	justify-content:space-around;
+	background: #ffffff;
+	border-top:2px solid #1AB394;
+	border-bottom: 2px solid #1AB394;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	display: inline-flex;
+	width:100%;
+	align-items: center;
+}
+
+.dropDownText{
+	padding: 10px 200px;
+
+}
+
+.dropDownText span{
+	display: block;
+	position: relative;
+	top: 50%;
+	left: -290%;
+	bottom:0%;
+}
+
+.dropDownImage {
+	
+	position: relative;
+	font-size: 17px;
+	left: 9.5%;
+}
+.pageNav{
+	display:flex;
+	justify-content:space-around;
+	height: auto;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-bottom: 0%;
+	background: #ffffff;
+
+   
+	border-top:2px solid #1AB394;
+  }
+.surveyButton {
+	background-color:#1a61b3;
+	border-radius:3px;
+	border:1px solid #1a61b3;
+	display:inline-block;
+	cursor:pointer;
+	color:#F4F4F4;
+	font-weight:bold;
+	padding:10px 30px;
+
+	width: 150px;
+	text-decoration:none;
+	margin-right: 1px;
+}
+.surveyButton:hover {
+	background-color:#138f76;
+}
+.surveyButton:active {
+	position:relative;
+	top:1px;
+}
+#btn1{
+    float:left;
+}
+#btn3{
+    float:right;
+}

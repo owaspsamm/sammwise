@@ -1,0 +1,50 @@
+.pageButtons {
+	box-shadow: 0px 0px 0px -6px #3dc21b;
+	background:linear-gradient(to bottom, #8DD9CA 5%, #8DD9CA 100%);
+	background-color:#8DD9CA;
+	border-radius:28px;
+	border:2px solid #8DD9CA;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1px;
+	padding:15px 15px;
+	text-decoration:none;
+	text-shadow:0px 36px 0px #2f6627;
+}
+.pageButtonsActive{
+	background-color:#ffffff;
+	border-radius:28px;
+	border:2px solid #8DD9CA;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1px;
+	padding:15px 15px;
+	text-decoration:none;
+
+}
+.pageLabel{
+    display: block;
+    font-size:13px;
+  }
+.grouping{
+	display: inline-block;
+	text-align: center;
+  }
+.pageNav{
+	display:flex;
+	justify-content:space-around;
+	height: auto;
+	padding-top: 2%;
+	padding-bottom: 1%;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-bottom: 0%;
+	background: #ffffff;
+   
+	border-top:2px solid #1AB394;
+  }
+  

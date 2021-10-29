@@ -1,0 +1,24 @@
+.uploadfile{
+  
+    border: 2px dashed rgb(0, 0, 0);
+    display: block;
+ }
+ .uploadfilewhite{
+    border: 2px dashed rgb(0, 0, 0);
+    display: block;
+    background: #ffffff;
+ }
+ .pageNav{
+	display:flex;
+	justify-content:space-around;
+	height: auto;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-bottom: 0%;
+	background: #F2F2F2;
+   
+	border-bottom:2px solid #1AB394;
+  }
+  

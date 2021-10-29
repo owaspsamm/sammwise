@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Armata&family=Titillium+Web:wght@600&display=swap");
+
+
+body {
+  background: #f2f2f2;
+  color: #333;
+  font-family: 'armata';
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+nav {
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+nav a {
+  margin-left: 12px;
+}
+nav .logo {
+  margin-right: auto;
+}
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
+}
+
+.grouping{
+  display: inline-block;
+  text-align: center;
+}
+
+      
+
+
+
+@font-face {
+  font-family: 'armata';
+  src: url('/fonts/armata/Armate-Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.tableofcontents{
+  position: sticky;
+  position: -webkit-sticky; /* For Safari */
+  top: 24px; /* How far down the page you want your ToC to live */
+
+  /* Give table of contents a scrollbar */
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+}
+.not-found{
+  text-align: center;
+}
+.not-found a{
+  color: #4979ff;
+  text-decoration: underline;
+}
+.btn{
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto;
+  background: #4979ff;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+.sv_qstn .sq-root {
+  border: 1px solid gray;
+  border-left: 4px solid #18a689;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+
+}
+.sv_qstn .sq-root-cb {
+  border-left: 4px solid orange;
+}
+.sq-title {
+  font-size: 20px;
+  margin-left: 20px;
+  width: 400px;
+  font-family: 'Armata';
+}
+.sq-description {
+  font-size: 15px;
+  margin-left: 20px;
+  width: 400px;
+  font-family: 'Armata';
+}
+.sq-title-required {
+  color: red;
+}
+.sq-label {
+  margin-left: 30px;
+}
+.sq-item:nth-child(1) {
+  margin-bottom: 5px;
+}
+
+.sv_main{
+  font-family: "Armata";
+}
+
+
+.chart_container {
+  float: left;
+}
+.rowC{
+  display:flex;
+  flex-direction:row;
+}
+.tab-list {  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+ 
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+ 
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
+
+ .middle{
+  display: block;
+  justify-content: center;
+  text-align: center;
+ }
+ p{
+   text-align: center;
+   vertical-align: middle;
+ }
+
+ .NextPage {
+	background-color:#1AB394;
+	border-radius:3px;
+	border:1px solid #1AB394;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-weight:bold;
+	padding:3px 37px;
+	text-decoration:none;
+}
+
+
+.SaveResponses{
+  background-color:#1a61b3;
+	border-radius:3px;
+	border:1px solid #1a61b3;
+	display:inline-block;
+	cursor:pointer;
+	color:#F4F4F4;
+	font-weight:bold;
+	padding:10px 30px;
+	width: 170px;
+	text-decoration:none;
+	margin-right: 1px;
+}
+
+.NextPage:hover {
+	background-color:#138f76;
+}
+.NextPage:active {
+	position:relative;
+	top:1px;
+}
+.pageNav{
+ 	justify-content: center;
+	text-align: center;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 0%;
+  background: #ffffff;
+
+}
+.surveyButtonBlock{
+  display: inline-block;
+}
+.inline{
+  display: flex;
+}
+
+
+@media print { 
+  /* All your print styles go here */
+ .btn { display: none; } 
+ nav { display: none; }
+ .footer { display: none; }
+ .jsonDownload {display: none; }
+ .gauge {align-items: center;  page-break-after: always; float: none;}
+ .totalsGraphs{
+   padding-bottom: 5cm;
+   flex-direction: column;
+ }
+ .totalsbar{
+    float: none !important;
+    /* page-break-before: always !important; */
+    break-after: page !important;
+    margin-left: 2cm;
+    margin-bottom: 5cm;
+    padding-top: 4cm;
+    padding-bottom: 3cm !important;
+    display: inline-block;  
+    width: 80% !important;
+    height: 20cm !important;
+    /* height: 25cm !important; */
+  }
+  .bussFuncRadarBox{
+    float: none !important;
+    /* page-break-inside: avoid !important; */
+    page-break-after: always !important;
+    margin-left: 4cm;
+    padding-top: 8cm !important;
+    padding-bottom: 3cm !important;
+    top: 5cm;
+    width: 100% !important;
+    align-content: center !important;
+    /* display: inline-block; */
+  }
+  .bussFuncRadar{
+    align-content: center !important;
+    width: 90% !important;
+    height:15cm !important;
+  }
+  .bussFuncBarBox{
+    float: none;
+    page-break-inside: avoid;
+    margin-right: 2cm;
+    padding-bottom: 5cm !important;
+    padding-top: 15cm !important; 
+  }
+  .bussFuncBar{
+    width: 90% !important;
+    height: 16cm !important;
+  }
+  .practiceRadarBox{
+    float: none !important;
+    page-break-inside: avoid;
+    page-break-after: always;
+    padding-bottom: 10cm !important;
+    padding-top: 15cm !important;
+  }
+  .practiceRadar{
+    width: 82% !important;
+    height: 20cm !important;
+  }
+  .practiceBarBox{
+    float: none !important;
+    page-break-inside: avoid;
+    page-break-after: always;
+    padding-bottom: 10cm !important;
+  }
+  .practiceBar{
+    width: 90% !important;
+    height: 15cm !important;
+  }
+  #totalsbargraph {margin-bottom: 3cm;} 
+ /* Hide the website name and date*/
+  /* @page :first { margin: 0mm; font-size: 12pt;  } */
+  @page{margin: 0.5mm;}
+} 
