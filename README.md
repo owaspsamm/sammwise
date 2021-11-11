@@ -24,9 +24,11 @@ SAMMwise is an open source Web App to calculate the Maturity score of an individ
 
 ## Getting Started
 
-Refer to the Build Options section below for how to setup and run the application.
+The quickest way to get up and running is to pull down the image from dockerhub using the following commands:  
+`docker pull stephenmorgan/owasp-sammwise`  
+`docker run -p 3000:3000 stephenmorgan/owasp-sammwise`
 
-**TODO:** Upload docker container to dockerhub.
+Refer to the Build Options section below for how to build and run the application.
 
 Both the docker and npm options will run the application on port 3000. The application can be accessed by navigation to http://localhost:3000 in your browser.
 
