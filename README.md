@@ -73,4 +73,4 @@ Then run the following depending on your use case:
 
 ## Contribute
 
-Please sumbit a Pull Request for bug fixes and feature enhancements.
+Please submit a Pull Request for bug fixes and feature enhancements.
