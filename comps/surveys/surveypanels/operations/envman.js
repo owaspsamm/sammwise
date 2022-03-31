@@ -178,6 +178,6 @@ const envman = () => {return ({
       }
     ],
     "title": "Environmental Management",
-    "state": "expanded"
+    "state": "collapsed"
   });}
 export default envman;

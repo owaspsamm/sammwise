@@ -14,8 +14,8 @@ var tosend = {
 
 }
 //Push elements to Skeleton 
-tosend.elements.push(envman())
 tosend.elements.push(incman())
+tosend.elements.push(envman())
 tosend.elements.push(opman())
 
 const operationsJSON = () => {

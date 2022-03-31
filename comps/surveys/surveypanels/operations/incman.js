@@ -178,6 +178,6 @@ const incman = () => {return ({
       }
     ],
     "title": "Incident Management",
-    "state": "collapsed"
+    "state": "expanded"
   });}
 export default incman;
