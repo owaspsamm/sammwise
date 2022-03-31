@@ -74,14 +74,14 @@ export default class assessmentCalculator{
             "Operations":{
                 "totalScore":0,
                 "practices":{
-                    "Incident Management":{
-                        "answers": this.getAnswerMap(73),
-                        "score":0
-                    },
                     "Environment Management":{
-                            "answers":this.getAnswerMap(79),
+                            "answers":this.getAnswerMap(73),
                             "score":0
                         },
+                    "Incident Management":{
+                        "answers": this.getAnswerMap(79),
+                        "score":0
+                    },
                     "Operations Management":{
                         "answers":this.getAnswerMap(85),
                         "score":0
