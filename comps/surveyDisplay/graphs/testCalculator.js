@@ -23,7 +23,7 @@ export default class assessmentCalculator{
             "Design":{
                 "totalScore":0,
                 "practices":{
-                    "Security Architecture":{
+                    "Threat Assessment":{
                         "answers": this.getAnswerMap(19),
                         "score":0
                     },
@@ -31,7 +31,7 @@ export default class assessmentCalculator{
                             "answers":this.getAnswerMap(25),
                             "score":0
                         },
-                    "Threat Assessment":{
+                    "Security Architecture":{
                         "answers":this.getAnswerMap(31),
                         "score":0
                     }
@@ -40,15 +40,15 @@ export default class assessmentCalculator{
             "Implementation":{
                 "totalScore":0,
                 "practices":{
-                    "Defect Management":{
+                    "Secure Build":{
                         "answers": this.getAnswerMap(37),
                         "score":0
                     },
-                    "Secure Build":{
+                    "Secure Deployment":{
                             "answers":this.getAnswerMap(43),
                             "score":0
                         },
-                    "Secure Deployment":{
+                    "Defect Management":{
                         "answers":this.getAnswerMap(49),
                         "score":0
                     }
@@ -74,11 +74,11 @@ export default class assessmentCalculator{
             "Operations":{
                 "totalScore":0,
                 "practices":{
-                    "Environment Management":{
+                    "Incident Management":{
                         "answers": this.getAnswerMap(73),
                         "score":0
                     },
-                    "Incident Management":{
+                    "Environment Management":{
                             "answers":this.getAnswerMap(79),
                             "score":0
                         },
@@ -103,7 +103,7 @@ export default class assessmentCalculator{
     
 
     getAnswerMap(start){
-        //Start is the question number in the assessment - this is so it stays consistent with the answerValues data struct
+        // start is the question number in the assessment - this is so it stays consistent with the answerValues data struct
         const answerMap = new Map()
             for(let i =start; i<start+6;i++){
                 var key = 'question' + i;
@@ -157,6 +157,9 @@ export default class assessmentCalculator{
                     var lvl2 = (question_values[1] + question_values[4]) / 2
                     var lvl3 = (question_values[2] + question_values[5]) / 2
                     var score = lvl1 + lvl2 + lvl3;
+                    if (bussFunc === "Implementation"){
+                        console.log('practice',practice, 'score', score);
+                    }
                     this.sammModel[bussFunc]["practices"][practice]["score"] = score
                     this.sammModel[bussFunc]["totalScore"] += score / 3
                     // this.overallScore += this.sammModel[bussFunc]["totalScore"]

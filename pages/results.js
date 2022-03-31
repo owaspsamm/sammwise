@@ -106,10 +106,8 @@ const results = () => {
                         totalsBarGraph.metaData.datasets.push(new Dataset().metaData);
                         bussFuncBarGraph.metaData.datasets.push(new Dataset().metaData);
                         practiceBarGraph.metaData.datasets.push(new Dataset().metaData);
-                        console.log('prev data uploaded')
                     }
                     
-                   // console.log("additional datasets added")
                 }
                 completionText = 'Thank you for completing the questionnaire'   
                 
@@ -127,19 +125,8 @@ const results = () => {
                         var testCalc = new assessmentCalculator(dataENV[dataNum]);
                         testCalc.computeResults();
                         
-                        // console.log(calcResultsJSON);
                         var totalsBarGraphData = [0,0,0,0]
                         
-                        console.log(testCalc.businessFunctionNames);
-                        console.log(testCalc.businessFunctionScores);
-                        // console.log(testCalc.practiceNames);
-                        // console.log(testCalc.practiceScores, 'len',testCalc.practiceScores.length);
-                        console.log(testCalc.responseCount);
-                        // bussFuncRadar.reset_data();
-                        // bussFuncBarGraph.resetData();
-                        // practiceRadar.reset_data();
-                        // practiceBarGraph.resetData();
-                        // totalsBarGraph.resetData();
                         bussFuncRadar.metaData.labels = testCalc.businessFunctionNames;
                         bussFuncBarGraph.metaData.labels = testCalc.businessFunctionNames;
                         
