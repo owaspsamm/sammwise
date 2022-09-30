@@ -416,7 +416,9 @@ const Mysurvey = (prop) => {
             
             sessionStorage.setItem('assessmentState', JSON.stringify(assessmentState));
         
-        
+            if (sessionStorage.getItem('prevResults') != null) {
+                sessionStorage.removeItem('prevResults');
+            }
            // router.reload()
             setDisplay(!display)
         }
