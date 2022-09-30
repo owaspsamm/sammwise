@@ -22,6 +22,31 @@ import question_desc from '../surveys/question_desc';
 const survey = new Survey.Model(Json());
 var isDropDownButtonClicked = false;
 
+function formatDate(date) {
+    let month = ''+(date.getMonth() + 1),
+    day = '' + date.getDate(),
+    year = date.getFullYear(),
+    hours = '' +date.getHours(),
+    minutes = '' +date.getMinutes(),
+    seconds = '' +date.getSeconds();
+    if  (month.length < 2) {
+      month = '0' + month;
+    }
+    if (day.length < 2) {
+      day = '0' + day;
+    }
+    if (hours.length < 2) {
+      hours = '0' + hours;
+    }
+    if (minutes.length < 2) {
+      minutes = '0' + minutes;
+    }
+    if (seconds.length < 2) {
+      seconds = '0' + seconds;
+    }
+  
+    return [year, month, day,hours,minutes,seconds].join('');
+  }
 
 
 const Mysurvey = (prop) => {
@@ -91,7 +116,17 @@ const Mysurvey = (prop) => {
         var a = document.createElement('a');
         var data = JSON.parse(sessionStorage.getItem('assessmentState'));
         a.setAttribute('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent(JSON.stringify(data)));
-        var fileName = "SAMMAssessmentResponses.json"
+        var ts = formatDate(new Date());
+        console.log(data);
+        if (data['Company Name'] != null && data['Company Name'] != "") {
+            if (data['Project name'] != null && data['Project name'] != "") {
+                var fileName = data['Company Name'] + '-' + data['Project name'] + '-'+ts+'.json';
+            } else {
+            var fileName = data['Company Name'] + '-'+ts+'.json';
+            }
+        } else {
+            var fileName = "SAMMAssessmentResponses-"+ts+".json";
+        }
         a.setAttribute('download', fileName);
         a.click()
     } 
@@ -419,6 +454,7 @@ const Mysurvey = (prop) => {
             if (sessionStorage.getItem('prevResults') != null) {
                 sessionStorage.removeItem('prevResults');
             }
+        
            // router.reload()
             setDisplay(!display)
         }
