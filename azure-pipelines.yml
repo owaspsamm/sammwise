@@ -28,3 +28,7 @@ stages:
         buildContext: '$(Build.SourcesDirectory)'
         tags: |
           $(tag)
+    - task: Docker@2
+      inputs:
+        command: 'push'
+        tags: '$(tag)'
